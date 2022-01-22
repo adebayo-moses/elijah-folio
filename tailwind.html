@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+               grey:"#2c3838",
+               limegreen:"#0D0D17",
+               blueBg:"#24D2A7",
+               greytext:"#626968"},
+              fontFamily:{
+                body:['DM Sans']
+              },
+              keyframes: {
+                slidein: {
+                     '0%': { transform: 'translateX(-14%)' },
+                     '100%': { transform: 'translateX(0%)' },
+                }
+              },
+              animation:{
+                slidein: 'slidein 1s ease-in-out',
+              }
+            }
+          }
+        }
+      </script>
+
+      <style type="text/tailwindcss">
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap');
+
+        @tailwind base;
+        @tailwind components;
+        @tailwind utilities;
+
+        
+
+      </style>
+  </head>
+  <body class="font-body bg-limegreen flex items-center justify-center h-screen">
+    <main class="animate-slidein bg-blueBg w-[90%] container mx-auto h-2/3 rounded-lg p-6 flex items-center justify-center relative">
+        <!-- <h4 class="text-white text-xl absolute top-6 center-6">Topskill Assignment</h4> -->
+        
+
+        <div class="hidden md:block h-16 w-16 border-[12px] border-grey rounded-full absolute left-24 top-36">
+        </div>
+
+        <!-- <div class=" hidden md:block h-[480px] w-[480px] border-[56px] border-grey/50 rounded-full absolute -left-80 top-40"></div> -->
+        
+        <form class="w-full max-w-xs text-center">
+            <h2 class="text-black text-2xl mb-6"> Repto Review</h2>
+            
+            <div>
+                <input class="bg-grey border-none text-sm shadow appearance-none border rounded w-full py-2 px-3 text-greytext leading-tight focus:outline-none focus:shadow-outline focus:text-white mb-2" type="text" placeholder="name" required>
+                <input class="bg-grey border-none text-sm shadow appearance-none border rounded w-full py-2 px-3 text-greytext leading-tight focus:outline-none focus:shadow-outline focus:text-white mb-2" type="phone" placeholder="phone" required>
+                <input class="bg-grey border-none text-sm shadow appearance-none border rounded w-full py-2 px-3 text-greytext leading-tight focus:outline-none focus:shadow-outline focus:text-white mb-2" type="text" placeholder="age" required>
+                <input class="bg-grey border-none text-sm shadow appearance-none border rounded w-full py-2 px-3 text-greytext leading-tight focus:outline-none focus:shadow-outline focus:text-white mb-2" type="state" placeholder="state" required>
+                <input class="bg-grey border-none text-sm shadow appearance-none border rounded w-full py-9 px-3 text-greytext leading-tight focus:outline-none focus:shadow-outline focus:text-white mb-2" type="text" placeholder="Why do you like us?" required>
+                
+                <div class="flex items-center justify-between mb-8">
+                    <div class="flex items-center">
+                        <!-- <input type="checkbox" name="sign1" id="sign1" class="mr-1"> -->
+                        <!-- <label for="sign1" class="text-greytext text-xs cursor-pointer">Keep me signed in</label> -->
+                    </div>
+                    
+                                 </div>
+            </div>
+            <button class="w-full bg-limegreen text-greytext px-7 py-2 rounded-md font-medium hover:bg-limegreen/75 hover:text-white">Log in</button>
+        </form>
+
+        <!-- <div class="hidden md:block h-6 w-6 border-[6px] border-limegreen rounded-full absolute right-20 bottom-20"></div> -->
+
+        <div class="hidden md:block h-5 w-5 border-[5px] border-limegreen rounded-full absolute right-6 bottom-32"></div>
+
+        <div class="hidden md:block h-16 w-16 border-[12px] border-limegreen rounded-full absolute right-4 bottom-4"></div>
+    </main>
+  </body>
+</html>
