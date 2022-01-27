@@ -1,0 +1,7 @@
+<?php
+
+sendMail: post= "action"
+
+
+
+?>
